@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel - MISHRA ENGLISH CLASS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* All the CSS styles from the admin panel I provided earlier */
+/* Copy the complete <style> section from the previous admin panel code */
+:root {
+--primary: #4a6bff;
+--primary-dark: #3a56d4;
+--secondary: #ff7e5f;
+--accent: #6c63ff;
+--light: #f8f9fa;
+--dark: #343a40;
+--gray: #6c757d;
+--light-gray: #e9ecef;
+--success: #28a745;
+--warning: #ffc107;
+--danger: #dc3545;
+--shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+--border-radius: 8px;
+--transition: all 0.3s ease;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #f5f7fb;
+color: var(--dark);
+line-height: 1.6;
+}
+
+/* ... REST OF THE CSS FROM ADMIN PANEL ... */
+</style>
+</head>
+<body>
+<!-- Login Section -->
+<div id="loginSection" class="login-container">
+<div class="login-icon">
+<i class="fas fa-lock"></i>
+</div>
+<h2>Admin Login</h2>
+<p style="color: var(--gray); margin-bottom: 30px;">Enter your credentials to access the admin panel</p>
+
+<div class="login-form active" id="emailLoginForm">
+<div class="form-group">
+<label for="adminEmail">Email Address</label>
+<input type="email" id="adminEmail" class="form-control" placeholder="Enter your email" value="itscient.gaurav2@gmail.com">
+</div>
+<div class="form-group">
+<label for="adminPassword">Password</label>
+<input type="password" id="adminPassword" class="form-control" placeholder="Enter your password" value="admin123">
+</div>
+<button class="btn btn-primary" style="width: 100%;" onclick="login()">Login to Admin Panel</button>
+</div>
+</div>
+
+<!-- Admin Panel (Initially Hidden) -->
+<div id="adminPanel" class="admin-container" style="display: none;">
+<!-- ... REST OF ADMIN PANEL HTML FROM PREVIOUS CODE ... -->
+<!-- Copy the entire admin panel HTML structure -->
+</div>
+
+<script>
+// All JavaScript functions from the admin panel
+// Copy the complete <script> section
+
+// Login function
+function login() {
+const email = document.getElementById('adminEmail').value;
+const password = document.getElementById('adminPassword').value;
+
+// Default credentials (change these!)
+const defaultEmail = "itscient.gaurav2@gmail.com";
+const defaultPassword = "admin123";
+
+if(email === defaultEmail && password === defaultPassword) {
+document.getElementById('loginSection').style.display = 'none';
+document.getElementById('adminPanel').style.display = 'block';
+showNotification('Login successful!', 'success');
+} else {
+showNotification('Invalid email or password!', 'error');
+}
+}
+
+// Rest of JavaScript functions...
+</script>
+</body>
+</html>

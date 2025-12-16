@@ -1,0 +1,35 @@
+{
+"lastUpdated": "2024-01-15",
+"siteTitle": "MISHRA ENGLISH CLASS",
+"tagline": "Master English with Expert Guidance",
+"banner": {
+"title": "Unlock Your English Potential with MISHRA ENGLISH CLASS",
+"description": "Join thousands of students who have transformed their English skills with our comprehensive courses, expert instructors, and proven teaching methods.",
+"primaryButton": {
+"text": "Explore Courses",
+"link": "#courses"
+},
+"secondaryButton": {
+"text": "Try Free Quiz",
+"link": "#quiz"
+}
+},
+"courses": [
+{
+"id": 1,
+"title": "English Speaking Mastery",
+"description": "Improve your speaking fluency, pronunciation, and confidence in everyday conversations and professional settings.",
+"price": "₹2,499",
+"originalPrice": "₹3,999",
+"rating": 4.5,
+"icon": "microphone-alt",
+"enrollLink": "#",
+"videoLink": ""
+}
+],
+"contact": {
+"phone": "+91 98765 43210",
+"email": "info@mishraenglishclass.com",
+"address": "123 Education Street, Learning City, LC 12345"
+}
+}

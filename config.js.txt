@@ -1,0 +1,43 @@
+// config.js - Configuration for MISHRA ENGLISH CLASS Admin Panel
+
+const CONFIG = {
+// Default login credentials (CHANGE THESE!)
+ADMIN_EMAIL: "itscient.gaurav2@gmail.com",
+ADMIN_PASSWORD: "mishra@english2024", // Change to a strong password!
+
+// GitHub Pages URL (will be updated automatically)
+GITHUB_PAGES_URL: "",
+
+// Blogger URL
+BLOGGER_URL: "https://mishraenglishclasses.blogspot.com",
+
+// Default content
+DEFAULT_CONTENT: {
+siteTitle: "MISHRA ENGLISH CLASS",
+tagline: "Master English with Expert Guidance",
+bannerTitle: "Unlock Your English Potential with MISHRA ENGLISH CLASS",
+bannerText: "Join thousands of students who have transformed their English skills with our comprehensive courses, expert instructors, and proven teaching methods.",
+courses: [
+{
+id: 1,
+title: "English Speaking Mastery",
+description: "Improve your speaking fluency, pronunciation, and confidence in everyday conversations and professional settings.",
+price: "₹2,499",
+originalPrice: "₹3,999",
+rating: 4.5,
+icon: "microphone-alt",
+enrollLink: "#",
+videoLink: ""
+},
+// Add more default courses...
+]
+},
+
+// Storage key for localStorage
+STORAGE_KEY: "mishra_english_content_v1"
+};
+
+// Auto-detect GitHub Pages URL
+if (window.location.hostname.includes('github.io')) {
+CONFIG.GITHUB_PAGES_URL = window.location.origin;
+}
